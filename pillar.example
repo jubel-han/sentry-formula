@@ -1,0 +1,16 @@
+# example pillar data for provision sentry service
+
+sentry_server:
+  user: sentry
+  group: sentry
+  db_name: db_sentry
+  db_user: sentry
+  db_password: db_sentry_password
+  redis_db: 0
+  redis_host: "'127.0.0.1'"
+  redis_port: 6379
+  sentry_url_prefix: http://
+  sentry_domain: sentry.example.com
+  allowed_hosts: "'*'"
+  secret_key: secret_example
+  admin_email: sentry@example.com
